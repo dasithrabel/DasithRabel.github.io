@@ -1,0 +1,277 @@
+
+
+
+
+
+
+
+body{
+    background:BLACK ;
+    color:black;
+    font-size: 50px;
+    background-repeat: no-repeat;
+    
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    background-color: black;
+    background-clip: text;
+    color: transparent;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 65px;
+    
+
+}
+h4{
+    color: black;
+    text-align: center;
+    font-size: 19px;
+
+    
+}
+h2{
+    background-clip: text;
+    color: transparent;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    background-color: white;
+    text-align: center;
+
+
+}
+
+
+h3{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
+    
+
+#header{
+    width:100%;
+    
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+.container2 {
+    width: 85vw;
+    max-width: 950px;
+    aspect-ratio: 16 / 9;
+    margin: 10px auto;
+    overflow: hidden;
+    border: 12px solid #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+    background: #141414;
+}
+.container3 {
+    height: 550px;
+    width: 355px;
+    margin: 30px auto 0 auto; 
+    position: relative;       
+    overflow: hidden;
+    border: 20px solid white;
+    border-radius: 10px;
+}
+.container1{
+    padding: 5px 5%;
+}
+
+
+
+
+@keyframes slide {
+    0%, 13% {
+        transform: translateX(0);
+    }
+    16.6%, 30% {
+        transform: translateX(-100%);
+    }
+    33.3%, 46% {
+        transform: translateX(-200%);
+    }
+    50%, 63% {
+        transform: translateX(-300%);
+    }
+    66.6%, 80% {
+        transform: translateX(-400%);
+    }
+    83.3%, 96% {
+        transform: translateX(-500%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+/* Ensure both images and video stretch correctly inside the slider */
+.wrapper1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    animation: slide 15s infinite;
+}
+.wrapper3{
+     width: 100%;
+    height: 100%;
+    flex: 0 0 100%;
+    object-fit: contain;
+}
+.wrapper video,
+.wrapper img {
+    width: 100%;
+    height: 100%;
+    flex: 0 0 100%;
+    object-fit: contain;
+}
+.wrapper3 img {
+    width: 100%;
+    height: 100%;
+    flex: 0 0 100%;
+    object-fit: contain;
+}
+.wrapper3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    animation: slide 15s infinite ease-in-out;
+}
+
+
+/* Custom Keyframe for 29s Video + 4 Images */
+@keyframes slideSSL {
+    /* 0s to 29s: Video plays in full */
+    0%, 59% {
+        transform: translateX(0);
+    }
+    /* 30s to 34s: Image 1 */
+    61.5%, 70% {
+        transform: translateX(-100%);
+    }
+    /* 35.5s to 39.5s: Image 2 */
+    72.5%, 81% {
+        transform: translateX(-200%);
+    }
+    /* 41s to 45s: Image 3 */
+    83.5%, 92% {
+        transform: translateX(-300%);
+    }
+    /* 46.3s to 48s: Image 4 */
+    94.5%, 98% {
+        transform: translateX(-400%);
+    }
+    /* Reset back to start */
+    100% {
+        transform: translateX(0);
+    }
+}
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    animation: slideSSL 49s infinite ease-in-out;
+}
+
+@keyframes slideInleft{
+    from{
+        transform: translateX(-90%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+
+
+}
+.head-1{
+   
+    animation-name:slideInleft ;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:1 ;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    color: white;
+
+
+}
+@keyframes slideIn{
+    from{
+        margin-left :-100%;
+    }
+    to{
+        margin-left: 0%;
+    }
+}
+
+.head-2{
+    
+    animation-name:slideIn ;
+    animation-duration: 1s;
+    animation-timing-function:ease-in-out ;
+    animation-iteration-count:1 ;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    color: white;
+    
+
+}
+
+.head-3{
+    
+    animation-name:slideIn ;
+    animation-duration: 5s;
+    animation-timing-function:ease-in-out ;
+    animation-iteration-count:1 ;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    color: white;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    width: 100%;
+}
+.logo{
+    width: 60px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    font-size: 18px;
+
+}
+nav ul li a::after{
+    height: 3px;
+    width: 0;
+    content: '';
+    position: absolute;
+    background: white;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+

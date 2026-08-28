@@ -1,0 +1,291 @@
+<html>
+    <head>
+        
+        <title>
+            Dasith Rabel
+        </title>
+        <link rel="icon" type="image/png" href="new.jpg">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <script src="https://kit.fontawesome.com/44cc60b67b.js" crossorigin="anonymous"></script>
+    </head>
+    <body >
+    <script>
+        function copyEmail(btn) {
+            const email = document.getElementById('email-text').innerText;
+            
+            navigator.clipboard.writeText(email).then(() => {
+                const icon = btn.querySelector('i');
+                
+                // Change icon to checkmark
+                icon.className = 'fa-solid fa-check';
+                btn.classList.add('copied');
+                
+                
+                setTimeout(() => {
+                    icon.className = 'fa-regular fa-copy';
+                    btn.classList.remove('copied');
+                }, 2000);
+            });
+        }
+        </script>
+    <div id="header">
+        <div class="bg-slideshow">
+            <div class="s slide1"></div>
+            <div class="s slide2"></div>
+            <div class="s slide3"></div>
+            <div class="s slide4"></div>
+            <div class="s slide5"></div>
+            
+        </div>
+        <div class="container">
+            <nav>
+                <img src="new.jpg" class="logo" alt="Logo">
+                
+                <ul class="nav-links">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT ME</a></li>
+                    <li><a href="#SKILLS-AND-EXPERIANCE">SKILLS AND EXPERIANCE</a></li>
+                    <li><a href="#contacts">CONTACTS</a></li>
+                </ul>
+
+                <div class="social-icons">
+                    
+                </div>
+            </nav>
+           
+            
+            <div class="hero-text-container">
+                <br><br>
+                <h1 class="head-2">HI,</h1>
+                <h1 class="head-1">MY NAME IS DASITH RABEL</h1>
+            </div>
+            
+        </div>
+        
+
+    </div>
+    
+    
+    
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                
+    
+                <div class="about-col1">
+                    <img src="pto777.png" width="100%" height="100%">
+                </div>
+                
+                <div class="abot_me_p">
+                    
+                    <div>
+                        <h3>About Me</h3>
+                        <h4>"Ad Maiora" - Towards the greater things</h4>
+                        <p>Hi there! I'm Dasith R. Rabel, a Software Engineering student at KDU Rathmalana. Fueled by genuine curiosity and a passion for code, I enjoy taking on tricky engineering problems and turning them into clean, efficient software. </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+     <a href="#header" class="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-angle-up"></i></a>
+    </div>
+
+    <div id="SKILLS-AND-EXPERIANCE">
+        <div class="container">
+            <h3 class="sub-title">SKILLS &amp; EXPERIENCE</h3>
+            <p class="section-intro">A breakdown of my technical abilities, ongoing learning, and practical experience.</p>
+
+            
+            <section class="sector">
+                <h4 class="category-title">
+                    <i class="fa-solid fa-check-circle"></i> Learned Skills
+                </h4>
+                <div class="skills-list">
+                    <div class="skills">
+                        <h2>HTML5 &amp; CSS3</h2>
+                        <div class="layer">
+                            <p>2+ Years Self-Taught</p>
+                            <span>Responsive Web Design &amp; Layouts</span>
+                        </div>
+                    </div>     
+
+                    <div class="skills">
+                        <h2>C# Programming</h2>
+                        <div class="layer">
+                            <p>1+ Years Self-Taught</p>
+                            <span>Object-Oriented Desktop Apps</span>
+                            <a href="myweb2.html" class="skill-btn">View Projects</a>
+                        </div>
+                    </div> 
+
+                    <div class="skills">
+                        <h2>Python Programming</h2>
+                        <div class="layer">
+                            <p>1+ Years Self-Taught</p>
+                            <span>Scripting &amp; Algorithm Logic</span>
+                        </div>
+                    </div>
+
+                    <div class="skills">
+                        <h2>Graphic Design</h2>
+                        <div class="layer">
+                            <p>3+ Years Self-Taught</p>
+                            <span>Branding &amp; Visual Design</span>
+                            <a href="myweb3.html" class="skill-btn">View Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="sector-divider"></div>
+
+            <br>
+            <section class="sector">
+                <h4 class="category-title">
+                    <i class="fa-solid fa-spinner fa-spin-pulse"></i> Still Learning Skills
+                </h4>
+                <div class="skills-list">
+                    <div class="skills learning-card">
+                        <span class="badge">In Progress</span>
+                        <h2>C++ Programming</h2>
+                        <div class="layer">
+                            <p>Currently Learning</p>
+                            <span>Core Memory Management &amp; DSA</span>
+                        </div>
+                    </div>     
+
+                    <div class="skills learning-card">
+                        <span class="badge">In Progress</span>
+                        <h2>JavaScript</h2>
+                        <div class="layer">
+                            <p>Currently Learning</p>
+                            <span>DOM Interactivity &amp; Web Scripts</span>
+                        </div>
+                    </div> 
+                    <div class="skills learning-card">
+                        <span class="badge">In Progress</span>
+                        <h2>Java</h2>
+                        <div class="layer">
+                            <p>Currently Learning</p>
+                            <span>Encapsulation</span>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+
+            <div class="sector-divider"></div>
+
+            <!-- SECTOR 3: EXPERIENCE & EDUCATION -->
+             <br>
+            <section class="sector">
+                <h4 class="category-title">
+                    <i class="fa-solid fa-briefcase"></i> Experience &amp; Education
+                </h4>
+                <div class="experience-list">
+                    <div class="exp-card">
+                        <div class="exp-header">
+                            <h3>Ordinary Level &amp; Advanced Level Education</h3>
+                            <span class="exp-date">2023</span>
+                        </div>
+                        <p>Completed G.C.E. O/L and A/L examinations with a strong foundation in secondary education at Ananda College, Colombo 10.</p>
+                    </div>
+                    <div class="exp-card">
+                        <div class="exp-header">
+                            <h3>Assured Diploma In Information Technology (DITECT)</h3>
+                            <span class="exp-date">2021</span>
+                        </div>
+                        <p>ESOFT Metro Campus, Nugegoda</p>
+                    </div>
+                    <div class="exp-card">
+                        <div class="exp-header">
+                            <h3>Software &amp; Web Development</h3>
+                            <span class="exp-date">2024 - Present</span>
+                        </div>
+                        <p>Building responsive web pages, application software scripts and functional program prototypes using C#, Python and web technologies.</p>
+                    </div>
+
+                    <div class="exp-card">
+                        <div class="exp-header">
+                            <h3>Google Cybersecurity Professional Certificate</h3>
+                            <span class="exp-date">2026 - Present</span>
+                        </div>
+                        <p>Enrolled via Coursera covering network security protocols, Python automation for security, Linux bash scripting and threat detection analysis.</p>
+                    </div>
+
+                    <div class="exp-card">
+                        <div class="exp-header">
+                            <h3>Graphic &amp; UI Design Projects</h3>
+                            <span class="exp-date">2023 - Present</span>
+                        </div>
+                        <p>Designing custom visual graphics, brand assets and digital layouts with 3+ years of self-taught freelance and academic work.</p>
+                    </div>
+                    <div class="exp-card">
+                        <div class="exp-header">
+                            <h3>Smart Street Lighting System IoT Project </h3>
+                            <span class="exp-date">2026 - Present</span>
+                        </div>
+                        <p>Engineered an energy-efficient street lighting prototype using Arduino Uno, LDR ambient light sensing and motion detection. Features low-power standby dimming at night, automatic full-brightness zone illumination upon vehicle detection, stationary vehicle overrides and a 30-second stepped dimming sequence to save energy.</p>
+                        <div class="exp-proof">
+                                <h4>Verified Proof</h4>
+                                 <a href="myweb4.html" class="skill-btn">View Project</a>
+                            </div>
+                    </div>
+
+                    
+                </div>
+            </section>
+
+            <a href="#header" class="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div id="contacts">
+        <div class="container">
+                <h3 class="sub-title">Contact Me</h3>
+        <div class="contacts-wrapper">
+            
+            <!-- Left Side: Direct Details & Social Links -->
+            
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope fa-wag"></i></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:dasithrabel@gmail.com" id="email-text">dasithrabel@gmail.com</a></p>
+                    </div>
+                    <button class="copy-btn" onclick="copyEmail(this)" aria-label="Copy Email">
+                        <i class="fa-regular fa-copy"></i>
+                    </button>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p><a href="tel:+94779292029">+94 77 9292 029</a></p>
+                    </div>
+                </div>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/dasith-rabel-a43342358/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/dasithrabel"  aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/_.dasith.rabel/"  aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/dasith.rabel" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/DasithRabe83781" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            
+
+        </div>
+     <a href="#header" class="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-angle-up"></i></a>
+    </div>
+   
+     <footer class="site-footer">
+        <p>&copy; 2026 Dasith Rabel. All Rights Reserved.</p>
+    </footer>   
+       
+        
+    </body>
+</html>
