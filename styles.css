@@ -735,7 +735,9 @@ nav ul li a:hover::after {
     }
 
     .about-col1 img {
-        max-height: 450px;
+        max-height: none;          
+        height: auto;             
+        object-position: top center;
         border-radius: 30px;
     }
 
