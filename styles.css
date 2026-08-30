@@ -312,6 +312,7 @@ nav ul li a:hover::after {
     align-items: center;
     background: transparent;
     object-fit: cover;
+    object-position: top center;
     
 }
 
